@@ -285,3 +285,42 @@ footer{
   align-items: center;
   
 }
+
+@media screen and (max-width:932px) {
+  html {
+    font-size: 50%;
+  }
+
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding:2rem 0rem;
+  }
+  .cloud {
+    height: 40rem;
+   
+  }
+  .moving-cloud-1 {
+    z-index: -2;
+  }
+  .moving-cloud-2 {
+    z-index: -1;
+  }
+  .locations-head h3 {
+    background: rgba(19, 28, 39, 0.9);
+    -webkit-text-fill-color: white;
+  }
+  
+  .form-wrapper {
+    
+    width: 100%; 
+  }
+ 
+  .form-wrapper h5 {
+    padding-bottom: 3rem;
+  }
+  footer {
+    text-align: center;
+  }
+}
