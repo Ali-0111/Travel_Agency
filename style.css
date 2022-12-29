@@ -44,17 +44,19 @@ body {
   }
   /*End of Gloabl style*/
   button {
-      padding: 2rem 6rem;
-      background: #4c6e97;
-      color:white;
-      font-size:2rem;
-      border: none;
-      cursor: pointer;
-      transition: background 1s ease-in-out;
+    padding: 2rem 6rem;
+    background: #4c6e97;
+    color:white;
+    font-size:1.8rem;
+    border: none;
+    cursor: pointer;
+    transition: background 1s ease-in-out;
   }
+
   button:hover {
       background: #27394e;
   }
+  /*main-header*/
   .main-head {
     background: #131c27;
     color: white;
@@ -69,7 +71,7 @@ body {
       justify-content: space-around;
       width: 90%;
       margin: auto;
-      padding: 1.7rem;    
+      padding: 2rem;    
       min-height: 10vh;
       flex-wrap: wrap;
   }
@@ -84,6 +86,7 @@ body {
     align-items: center;
     display: flex;
   }
+  /*Section:Hero*/
   .hero {
     min-height: 90vh;
     background: linear-gradient(rgba(0,0,0,0.8),transparent),url("./img/landing-page.jpg");
@@ -102,6 +105,8 @@ body {
  .hero h3 {
      padding: 5rem;
  }
+/*Section:Location*/
+
  #Locations{
     min-height: 100vh;
     background:linear-gradient(rgba(0,0,0,0.5),transparent),url("./img/new-york-page.png");
@@ -122,6 +127,7 @@ body {
  }
  .locations-head h2 {
      padding:1rem 0rem;
+     text-decoration: underline;
  }
 
  .locations-head h3 {
@@ -158,6 +164,7 @@ body {
       transform: translate(0%, 0%);
     }
   }
+/*Section:Benefits*/
 
 .Benefits-head {
     min-height: 30vh;
@@ -208,3 +215,73 @@ body {
   line-height: 1.8;
 }
 /*End of Cards*/
+/*Section:Contact*/
+
+#Contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5),transparent),url("./img/contact-mountain.png");
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Form:*/
+.form-wrapper {
+  background: rgba(19, 28, 39, 0.8);
+  width: 60%;
+  border-radius: 20px;
+  text-align: center;
+  color:white;
+  
+}
+.form-head {
+  
+  padding: 4rem;
+  color: white;
+}
+.name-form,.email-form{ 
+ padding:3rem;
+}
+
+.form-wrapper label {
+  margin: 0rem 3rem;
+}
+.form-wrapper input {
+  padding:1rem 3rem;
+}
+.form-wrapper button {
+  margin-top:8rem;
+  padding:2rem;
+  width: 100%;
+  border-bottom-right-radius:20px;
+  border-bottom-left-radius:20px;
+
+}
+
+/*Footer*/
+footer{
+  color: white;
+  background: rgba(19, 28, 39, 1);
+  
+}
+.footer-wrapper {
+  width: 90%;
+  min-height: 10vh;
+  margin: auto;
+  padding:2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.footer-wrapper h5 {
+  flex: 1 1 40rem;
+}
+.footer-wrapper ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+  
+}
