@@ -287,16 +287,19 @@ footer{
 }
 
 @media screen and (max-width:932px) {
+  /*Size base*/
   html {
     font-size: 50%;
   }
-
+  /*main header*/
   nav {
     text-align: center;
   }
   #logo {
     padding:2rem 0rem;
   }
+
+  /*page 2*/
   .cloud {
     height: 40rem;
    
@@ -311,7 +314,7 @@ footer{
     background: rgba(19, 28, 39, 0.9);
     -webkit-text-fill-color: white;
   }
-  
+  /*Page:3 form*/
   .form-wrapper {
     
     width: 100%; 
@@ -320,7 +323,11 @@ footer{
   .form-wrapper h5 {
     padding-bottom: 3rem;
   }
+  /*footer*/
   footer {
     text-align: center;
+  }
+  footer h5 {
+    padding-bottom: 3rem;
   }
 }
