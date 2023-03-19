@@ -1,221 +1,230 @@
-/*Global styles*/
+/* Global styles */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
- html {
-    font-size: 62.5%;
-  
+
+html {
+  font-size: 62.5%;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-  }
-  
-  h1 {
-    font-size: 2.6rem;
-  }
-
-  li,
-  button,
-  label,
-  input,
-  p {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 4.8rem;
-  }
-  h3 {
-    font-size: 3rem;
-    font-weight: normal;
-  }
-  h4,
-  h5 {
-    font-size: 2.8rem;
-  }
-  a {
-    color:white;
-    text-decoration: none;
-  }
-  li {
-      list-style: none;
-  }
-  /*End of Gloabl style*/
-  button {
-    padding: 2rem 6rem;
-    background: #4c6e97;
-    color:white;
-    font-size:1.8rem;
-    border: none;
-    cursor: pointer;
-    transition: background 1s ease-in-out;
-  }
-
-  button:hover {
-      background: #27394e;
-  }
-  button:focus{
-    outline-style: solid;
-    outline-color: cornflowerblue;
-  }
-  /*main-header*/
-  .main-head {
-    background: #131c27;
-    color: white;
-    position: sticky;
-    top: 0px;
-    z-index: 2;
-    
-  }
-  .main-head nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      width: 90%;
-      margin: auto;
-      padding: 2rem;    
-      min-height: 10vh;
-      flex-wrap: wrap;
-  }
-  .nav-head{
-    flex : 2 1 40rem;
-    font-weight: 400;
-      
-  }
-  .nav-list{
-    flex: 1 1 40rem;
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-  }
-  /*Section:Hero*/
-  .hero {
-    min-height: 90vh;
-   
-    background-size: cover;
-    color: white;
-    text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.8),transparent),url("./img/landing-page.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-  }
- .hero h3 {
-     padding: 5rem;
- }
-/*Section:Location*/
-
- #Locations{
-    min-height: 100vh;
-    background:linear-gradient(rgba(0,0,0,0.5),transparent),url("./img/new-york-page.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    position: relative;
-    overflow: hidden;
-
- }
- .locations-head{
-     width: 90%;
-     margin: auto;
- }
- .locations-head h2 {
-     padding:1rem 0rem;
-     text-decoration: underline;
-    
-
- }
-
- .locations-head h3 {
-    padding:4rem 2rem;
-    /*change color of the text by background color */
-    background: linear-gradient(#131c27, #663b34);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
-
- }
-/*Cloud Art*/
- .cloud {
-     position:absolute;
-     top:0;
-     right:0;
- }
- .moving-cloud-1{
-    animation: cloudAnimation 3s infinite alternate ease-in-out;
-    z-index:0;
-    
-
+  font-family: "Poppins", sans-serif;
 }
-.moving-cloud-2{
-    animation: cloudAnimation 3.5s infinite alternate ease-in-out;
-    opacity: 0.5;
-    top:20%;
-    z-index: -1;
+
+h1 {
+  font-size: 2.6rem;
 }
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* End of Gloabl style */
+button {
+  padding: 2rem 6rem;
+  background: #4c6e97;
+  color: white;
+  font-size: 1.8rem;
+  border: none;
+  cursor: pointer;
+  transition: background 1s ease-in-out;
+}
+
+button:hover {
+  background: #27394e;
+}
+
+button:focus {
+  outline-style: solid;
+  outline-color: cornflowerblue;
+}
+
+/* main-header */
+.main-head {
+  background: #131c27;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.main-head nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+
+.nav-head {
+  flex: 2 1 40rem;
+  font-weight: 400;
+}
+
+.nav-list {
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+
+/* Section:Hero */
+.hero {
+  min-height: 90vh;
+  color: white;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url("./img/landing-page.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+/* Section:Location */
+
+#Locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("./img/new-york-page.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+
+.locations-head h2 {
+  padding: 1rem 0;
+  text-decoration: underline;
+}
+
+.locations-head h3 {
+  padding: 4rem 2rem;
+
+  /* change color of the text by background color */
+  background: linear-gradient(#131c27, #663b34);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Cloud Art */
+.cloud {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.moving-cloud-1 {
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
+  z-index: 0;
+}
+
+.moving-cloud-2 {
+  animation: cloudAnimation 3.5s infinite alternate ease-in-out;
+  opacity: 0.5;
+  top: 20%;
+  z-index: -1;
+}
+
 /* Cloud Animation */
 @keyframes cloudAnimation {
-    from {
-      transform: translate(10%, -10%);
-    }
-    to {
-      transform: translate(0%, 0%);
-    }
+  from {
+    transform: translate(10%, -10%);
   }
-/*Section:Benefits*/
+
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* Section:Benefits */
 
 .Benefits-head {
-    min-height: 30vh;
-    background: #343c44;
-    color:white;
-    padding:3rem;
-    display: flex;
-    flex-direction: column;
-    flex-direction: center;
-    align-items: center;
-    text-align: center;
+  min-height: 30vh;
+  background: #343c44;
+  color: white;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  flex-direction: center;
+  align-items: center;
+  text-align: center;
 }
-/*Cards:*/
-.cards {
-    min-height: 70vh;
-    width: 90%;
-    margin: auto;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-   
-}
-.card {
 
-    flex:1 1 30rem;
-    min-height: 40vh;
-    text-align: center;
-    margin: 2rem 5rem;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1); 
-    
-    
+/* Cards: */
+.cards {
+  min-height: 70vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.card img{
-    max-width: 15%;
-    margin: 2rem;
+
+.card {
+  flex: 1 1 30rem;
+  min-height: 40vh;
+  text-align: center;
+  margin: 2rem 5rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.1);
 }
-.card-icon{
-    
-    background: #27394e;
+
+.card img {
+  max-width: 15%;
+  margin: 2rem;
+}
+
+.card-icon {
+  background: #27394e;
 }
 
 .card h4,
@@ -223,120 +232,131 @@ body {
   padding: 1rem;
   line-height: 1.8;
 }
-/*End of Cards*/
-/*Section:Contact*/
+
+/* End of Cards */
+
+/* Section:Contact */
 
 #Contact {
   min-height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.5),transparent),url("./img/contact-mountain.png");
- 
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url("./img/contact-mountain.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/*Form:*/
+
+/* Form: */
 .form-wrapper {
   background: rgba(19, 28, 39, 0.8);
   width: 60%;
   border-radius: 20px;
   text-align: center;
-  color:white;
-  
+  color: white;
 }
+
 .form-head {
-  
   padding: 4rem;
   color: white;
 }
-.name-form,.email-form{ 
- padding:3rem;
+
+.name-form,
+.email-form {
+  padding: 3rem;
 }
 
 .form-wrapper label {
-  margin: 0rem 3rem;
+  margin: 0 3rem;
 }
+
 .form-wrapper input {
-  padding:1rem 3rem;
+  padding: 1rem 3rem;
 }
+
 .form-wrapper button {
-  margin-top:8rem;
-  padding:2rem;
+  margin-top: 8rem;
+  padding: 2rem;
   width: 100%;
-  border-bottom-right-radius:20px;
-  border-bottom-left-radius:20px;
-
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
-/*Footer*/
-footer{
+/* Footer */
+footer {
   color: white;
   background: rgba(19, 28, 39, 1);
-  
 }
+
 .footer-wrapper {
   width: 90%;
   min-height: 10vh;
   margin: auto;
-  padding:2rem;
+  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
+
 .footer-wrapper h5 {
   flex: 1 1 40rem;
 }
+
 .footer-wrapper ul {
   display: flex;
   flex: 1 1 40rem;
   justify-content: space-between;
   align-items: center;
-  
 }
 
-@media screen and (max-width:932px) {
-  /*Size base*/
+@media screen and (max-width: 932px) {
+  /* Size base */
   html {
     font-size: 50%;
   }
-  /*main header*/
+
+  /* main header */
   nav {
     text-align: center;
   }
+
   #logo {
-    padding:2rem 0rem;
+    padding: 2rem 0;
   }
 
-  /*page 2*/
+  /* page 2 */
   .cloud {
     height: 40rem;
-   
   }
+
   .moving-cloud-1 {
     z-index: -2;
   }
+
   .moving-cloud-2 {
     z-index: -1;
   }
+
   .locations-head h3 {
     background: rgba(19, 28, 39, 0.9);
     -webkit-text-fill-color: white;
   }
-  /*Page:3 form*/
+
+  /* Page:3 form */
   .form-wrapper {
-    
-    width: 100%; 
+    width: 100%;
   }
- 
+
+  footer h5 {
+    padding-bottom: 3rem;
+  }
+
   .form-wrapper h5 {
     padding-bottom: 3rem;
   }
-  /*footer*/
+
+  /* footer */
   footer {
     text-align: center;
-  }
-  footer h5 {
-    padding-bottom: 3rem;
   }
 }
