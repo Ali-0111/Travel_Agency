@@ -291,8 +291,15 @@ footer{
   display: flex;
   flex: 1 1 40rem;
   justify-content: space-between;
-  align-items: center;
-  
+  align-items: center;  
+}
+
+footer a img {
+  transition: all 0.2s ease-in-out;
+}
+
+footer a:hover img {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width:932px) {
@@ -339,7 +346,4 @@ footer{
   footer h5 {
     padding-bottom: 3rem;
   }
-    
-  footer a:hover {
-        transform: scale(1.2)
-    }
+}
