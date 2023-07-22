@@ -339,4 +339,7 @@ footer{
   footer h5 {
     padding-bottom: 3rem;
   }
-}
+    
+  footer a:hover {
+        transform: scale(1.2)
+    }
